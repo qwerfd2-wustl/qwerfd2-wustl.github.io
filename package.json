@@ -1,0 +1,25 @@
+{
+  "name": "rithik-bunnylol",
+  "main": "app.js",
+  "homepage": "https://qwerfd2-wustl.github.io/bunny",
+  "scripts": {
+    "build": "babel src/ -d compiled/",
+    "deploy": "gh-pages -d compiled",
+    "bundle": "rollup compiled/app.js -o main.js -f cjs --compact",
+    "minify": "minify --mangle main.js -o main.js",
+    "flow": "flow"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-flow": "^7.10.4",
+    "babel-minify": "^0.2.0",
+    "express": "^4.17.1",
+    "flow-bin": "^0.132.0",
+    "rollup": "^2.26.10",
+    "rollup-plugin-terser": "^5.3.1"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

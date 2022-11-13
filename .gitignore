@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+commandTable.js
+main.js
+compiled/
+*DS_Store
+stocks/
